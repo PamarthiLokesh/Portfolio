@@ -1,0 +1,67 @@
+/* About Section Styling */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Pop-Out 3D Effect */
+  .about-content:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffdf00;
+    text-shadow: 0 3px 10px rgba(255, 223, 0, 0.8);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  /* Title Pop-Out Effect */
+  h2:hover {
+    transform: scale(1.1);
+    text-shadow: 0 5px 15px rgba(255, 223, 0, 1);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Paragraph Hover Effect */
+  .about-content:hover p {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about {
+      padding: 30px 10px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  

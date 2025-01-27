@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Logo Pop-Out Effect */
+  .logo:hover {
+    transform: scale(1.1);
+    text-shadow: 0 3px 8px rgba(255, 255, 255, 0.6);
+  }
+  
+ /* Navigation Links Styling */
+.nav-links {
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  gap: 10px; /* Adds space between each link */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative; /* Required for underline animation */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  position: relative; /* For hover effects */
+}
+
+.nav-links a:hover {
+  color: #ffdf00; /* Highlight color for hover */
+}
+
+/* Underline Hover Effect */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffdf00;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Expands underline */
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Reduces spacing for smaller screens */
+  }
+
+  .nav-links a {
+    font-size: 1rem; /* Adjusts font size for mobile */
+    padding: 8px 12px;
+  }
+}
+
+
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* 3D Hover Effect for Links */
+  .nav-link:hover {
+    transform: translateY(-5px) scale(1.1);
+    color: #ffdf00;
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #ffdf00;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .nav-link:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-link {
+      margin: 10px 0;
+    }
+  }
+  

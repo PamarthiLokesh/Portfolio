@@ -1,0 +1,54 @@
+/* Footer Section Styling */
+.footer {
+    padding: 20px;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Footer Text Styling */
+  .footer p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  /* 3D Hover Effect for Text */
+  .footer p:hover {
+    transform: translateY(-5px) scale(1.05);
+    text-shadow: 0 4px 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Decorative Elements (Optional) */
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 60%);
+    transform: rotate(45deg);
+    animation: rotateBackground 10s linear infinite;
+  }
+  
+  /* Background Animation */
+  @keyframes rotateBackground {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,113 @@
+/* Projects Section Styling */
+.projects {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffdf00;
+    text-shadow: 0 3px 10px rgba(255, 223, 0, 0.8);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  /* Title Pop-Out Effect */
+  .projects h2:hover {
+    transform: scale(1.1);
+    text-shadow: 0 5px 15px rgba(255, 223, 0, 1);
+  }
+  
+  /* Project Grid Styling */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Project Card Styling */
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    color: white;
+  }
+  
+  /* Pop-Out Effect for Project Cards */
+  .project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Project Card Title */
+  .project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffdf00;
+    text-shadow: 0 3px 10px rgba(255, 223, 0, 0.8);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  /* Title Hover Effect */
+  .project-card h3:hover {
+    transform: scale(1.1);
+    text-shadow: 0 5px 15px rgba(255, 223, 0, 1);
+  }
+  
+  /* Project Card Description */
+  .project-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+  
+  /* Project Card Links */
+  .project-card a {
+    display: inline-block;
+    background: #ffdf00;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* 3D Hover Effect for Links */
+  .project-card a:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 223, 0, 0.8);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects h2 {
+      font-size: 1.8rem;
+    }
+  
+    .project-card {
+      padding: 15px;
+    }
+  
+    .project-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .project-card p {
+      font-size: 0.9rem;
+    }
+  
+    .project-card a {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
